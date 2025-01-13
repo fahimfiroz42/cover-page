@@ -28,11 +28,11 @@ const Navbar = () => {
       <li><NavLink to={'/about'}>About</NavLink></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">COVER PAGE</a>
+    <a className="  text-primary font-bold text-xl">COVER PAGE</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><NavLink to={'/'}>Home</NavLink></li>
+      <li><NavLink to={'/'} className={({isActive})=> isActive ? 'btn btn-sm bg-primary text-white' : 'btn btn-sm'}>Home</NavLink></li>
       <li><NavLink to={'/coverpage'}>Cover Page</NavLink></li>
       <li><NavLink to={'/about'}>About</NavLink></li>
 
@@ -40,7 +40,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className="btn btn-sm  bg-secondary text-white">Dev</a>
   </div>
 </div>
     );
